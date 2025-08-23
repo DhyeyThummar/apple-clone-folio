@@ -12,7 +12,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-subtle">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 dark:bg-gradient-dark bg-gradient-subtle">
       {/* Parallax background */}
       <div 
         className="absolute inset-0 parallax-element"
@@ -52,13 +52,6 @@ const HeroSection = () => {
           <Button variant="outline" className="apple-button-secondary">
             Download Resume
           </Button>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 fade-in" style={{ animationDelay: "1s" }}>
-          <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-muted-foreground rounded-full mt-2 animate-bounce" />
-          </div>
         </div>
       </div>
     </section>
