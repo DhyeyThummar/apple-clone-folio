@@ -12,7 +12,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 dark:bg-gradient-dark bg-gradient-subtle">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 bg-gradient-to-br from-background via-background to-apple-blue/5">
       {/* Parallax background */}
       <div 
         className="absolute inset-0 parallax-element"

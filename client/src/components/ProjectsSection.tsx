@@ -83,7 +83,7 @@ const ProjectsSection = () => {
                   {project.tech.map((tech) => (
                     <span 
                       key={tech}
-                      className="px-4 py-2 bg-muted rounded-full text-sm font-medium text-muted-foreground"
+                      className="px-4 py-2 bg-apple-blue/10 border border-apple-blue/20 rounded-full text-sm font-medium text-apple-blue hover:bg-apple-blue hover:text-white transition-colors duration-200"
                     >
                       {tech}
                     </span>
@@ -131,7 +131,7 @@ const ProjectsSection = () => {
                     {project.tech.map((tech) => (
                       <span 
                         key={tech}
-                        className="px-3 py-1 bg-muted rounded-full text-xs font-medium text-muted-foreground"
+                        className="px-3 py-1 bg-apple-blue/10 border border-apple-blue/20 rounded-full text-xs font-medium text-apple-blue"
                       >
                         {tech}
                       </span>

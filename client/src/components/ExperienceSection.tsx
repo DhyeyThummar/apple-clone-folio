@@ -93,18 +93,10 @@ const ExperienceSection = () => {
                     {/* Header */}
                     <div className="mb-6">
                       <div className="flex items-center gap-2 mb-2">
-                        <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${
-                          item.type === 'education' ? 'bg-blue-100 dark:bg-blue-900' : 'bg-green-100 dark:bg-green-900'
-                        }`}>
-                          <Building className={`w-4 h-4 ${
-                            item.type === 'education' ? 'text-blue-600 dark:text-blue-400' : 'text-green-600 dark:text-green-400'
-                          }`} />
+                        <div className="w-8 h-8 bg-apple-blue/10 rounded-lg flex items-center justify-center">
+                          <Building className="w-4 h-4 text-apple-blue" />
                         </div>
-                        <span className={`text-xs font-medium px-2 py-1 rounded-full ${
-                          item.type === 'education' 
-                            ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'
-                            : 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300'
-                        }`}>
+                        <span className="text-xs font-medium px-2 py-1 rounded-full bg-apple-blue/10 text-apple-blue border border-apple-blue/20">
                           {item.type === 'education' ? 'Education' : 'Experience'}
                         </span>
                       </div>

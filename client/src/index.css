@@ -111,6 +111,10 @@
   /* Apple-style typography */
   .apple-headline {
     @apply text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-none;
+    background: linear-gradient(135deg, hsl(var(--foreground)) 0%, hsl(var(--muted-foreground)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   
   .apple-subheadline {
@@ -141,20 +145,46 @@
   }
   
   .apple-button {
-    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-full transition-all duration-200 ease-out;
+    @apply inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-full transition-all duration-200 ease-out backdrop-blur-sm;
   }
   
   .apple-button-primary {
-    @apply apple-button bg-blue-500 text-white hover:bg-blue-600 shadow-lg hover:shadow-xl;
+    @apply apple-button bg-apple-blue text-white hover:bg-apple-blue-dark shadow-lg hover:shadow-xl;
   }
   
   .apple-button-secondary {
-    @apply apple-button bg-transparent border border-current hover:bg-foreground hover:text-background;
+    @apply apple-button bg-transparent border-2 border-apple-blue text-apple-blue hover:bg-apple-blue hover:text-white;
   }
   
   /* Apple-style card */
   .apple-card {
-    @apply bg-card rounded-3xl p-8 shadow-md hover:shadow-lg transition-all duration-300;
+    @apply bg-card rounded-3xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-border/10;
+  }
+
+  /* Apple blue utilities */
+  .bg-apple-blue {
+    background-color: hsl(var(--apple-blue));
+  }
+
+  .bg-apple-blue-dark {
+    background-color: hsl(var(--apple-blue-dark));
+  }
+
+  .text-apple-blue {
+    color: hsl(var(--apple-blue));
+  }
+
+  .border-apple-blue {
+    border-color: hsl(var(--apple-blue));
+  }
+
+  /* Apple-style gradients */
+  .apple-gradient {
+    background: linear-gradient(135deg, hsl(var(--apple-blue)) 0%, hsl(var(--apple-blue-dark)) 100%);
+  }
+
+  .apple-gradient-subtle {
+    background: linear-gradient(135deg, hsl(var(--apple-blue) / 0.1) 0%, hsl(var(--apple-blue-dark) / 0.05) 100%);
   }
   
   /* Parallax container */
