@@ -1,0 +1,3 @@
+@echo off
+echo Starting development build...
+node scripts/build-dev.js
