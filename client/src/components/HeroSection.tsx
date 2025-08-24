@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import heroPortrait from "@/assets/hero-portrait.jpg";
+// Placeholder for hero portrait - replace with your image path
+const heroPortrait = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face";
 
 const HeroSection = () => {
   const [scrollY, setScrollY] = useState(0);
