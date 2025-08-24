@@ -154,7 +154,7 @@
   
   /* Apple-style card */
   .apple-card {
-    @apply bg-card rounded-3xl p-8 shadow-medium hover:shadow-large transition-all duration-300;
+    @apply bg-card rounded-3xl p-8 shadow-md hover:shadow-lg transition-all duration-300;
   }
   
   /* Parallax container */
